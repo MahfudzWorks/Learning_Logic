@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form
+      action="http://127.0.0.1:8000/login.php"
+      method="POST"
+      onsubmit="return result()"
+    >
+      username: <input type="text" id="username" name="username" /><br /><br />
+      password:
+      <input type="password" id="password" name="password" /><br /><br />
+      <button type="submit">Login</button>
+    </form>
+
+    <script>
+      function result() {
+        let user = document.getElementById("username").value;
+        let pass = document.getElementById("password").value;
+
+        if (user === "" || pass === "") {
+          alert("Username dan password harus diisi");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>

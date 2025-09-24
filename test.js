@@ -1,50 +1,42 @@
-let angka = 6;
+// Soal 1
 
-// Ganjil genap
-if (angka % 2 === 0) {
-  console.log("${angka} Angka Genap");
-} else {
-  console.log("${angka} Angka Ganjil");
-}
+// const readline = require("readline");
 
-const readline = require("readline");
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+// let keluarga = {
+//   kakak: "polindrom",
+//   adek: "polindrom",
+//   orangtua: "nonpolindrom",
+// };
 
-// Faktorial
-rl.question("Masukkan angka untuk faktorial: ", function (input) {
-  let n = parseInt(input);
+// rl.question("masukkan nama anggota keluarga (kakak/adek/orangtua):", (cari) => {
+//   if (keluarga[cari]) {
+//     console.log(cari + " = " + keluarga[cari]);
+//   } else {
+//     console.log("anggota keluarga tidak ditemukan");
+//   }
 
-  if (isNaN(n) || n < 0) {
-    console.log("Input tidak valid!");
-  } else {
-    let hasil = 1;
-    for (let i = 1; i <= n; i++) {
-      hasil *= i;
-    }
-    console.log(`Faktorial dari ${n} adalah ${hasil}`);
-  }
+//   rl.close();
+// });
 
-  rl.close();
-});
+// Soal 2
 
-// Fibonacci
-rl.question("Masukkan jumlah deret Fibonacci: ", function (input) {
-  let n = parseInt(input);
+// let n = 5;
 
-  if (isNaN(n) || n <= 0) {
-    console.log("Input tidak valid!");
-  } else {
-    let fib = [0, 1];
-    for (let i = 2; i < n; i++) {
-      fib[i] = fib[i - 1] + fib[i - 2];
-    }
-    console.log(`Deret Fibonacci ${n} angka pertama:`);
-    console.log(fib.slice(0, n).join(", "));
-  }
+// for (let i = 1; i <= n; i++) {
+//   console.log("*".repeat(i));
+// }
 
-  rl.close();
-});
+// for (let i = 1; i <= n; i++) {
+//   console.log(" ".repeat(n - i) + "*".repeat(i));
+// }
+
+// for (let i = 1; i <= n; i++) {
+//   console.log(" ".repeat(n - i) + "*".repeat(2 * i - 1));
+// }
+
+// Soal 3
